@@ -12,3 +12,8 @@ Node(package='try_navigation',
           output='screen',
           arguments=[],
     ),
+
+
+~~~python
+ros2 bag record /livox/lidar /odom /livox/imu
+~~~
