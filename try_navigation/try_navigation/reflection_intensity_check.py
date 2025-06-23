@@ -138,7 +138,7 @@ class ReflectionIntensityMap(Node):
         self.PLOT_LIM_Y_MIN =  -1.0 #[m]
         self.PLOT_LIM_Y_MAX =   1.0 #[m]
         
-        self.REF_OBJ_PATARN = 5
+        self.REF_OBJ_PATARN = 6
         if self.REF_OBJ_PATARN == 0: # mirror
             self.REF_OBJ_LIM_X_MIN =   1.35  #[m]
             self.REF_OBJ_LIM_X_MAX =   1.65  #[m]
@@ -169,6 +169,11 @@ class ReflectionIntensityMap(Node):
             self.REF_OBJ_LIM_X_MAX =   3.00  #[m]
             self.REF_OBJ_LIM_Y_MIN =  -0.15+0.5 #[m]
             self.REF_OBJ_LIM_Y_MAX =   0.15+0.5 #[m]
+        elif self.REF_OBJ_PATARN == 6: # sample
+            self.REF_OBJ_LIM_X_MIN =   1.85  #[m]
+            self.REF_OBJ_LIM_X_MAX =   2.15  #[m]
+            self.REF_OBJ_LIM_Y_MIN =  -0.15 #[m]
+            self.REF_OBJ_LIM_Y_MAX =   0.15 #[m]
         
         
     def timer_callback(self):
