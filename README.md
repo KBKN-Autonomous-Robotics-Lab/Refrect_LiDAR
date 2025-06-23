@@ -1,18 +1,14 @@
 # Refrect_LiDAR
 
+
 #lanch
 ~~~python
 ros2 launch try_navigation reflection_check.launch.py 
 ~~~
-#run 
-#reflection intensity map
-Node(package='try_navigation',
-     executable='reflection_intensity_check',
-          name='reflection_intensity_map_node',
-          output='screen',
-          arguments=[],
-    ),
 
+~~~python
+ros2 launch orange_bringup orange_robot.launch.xml
+~~~
 
 ~~~python
 ros2 bag record /livox/lidar /odom /livox/imu
